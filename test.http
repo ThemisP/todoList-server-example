@@ -1,0 +1,30 @@
+# Health check endpoint
+GET http://localhost:4000/
+
+
+###
+# Get all todos
+GET http://localhost:4000/api/todos
+
+###
+# Create todo
+POST http://localhost:4000/api/todos
+Content-Type: application/json
+
+{
+  "message": "Buy Bread"
+}
+
+###
+# Update todo by id
+PUT http://localhost:4000/api/todos/492763
+Content-Type: application/json
+
+{
+  "message": "Buy milk UPDATED",
+  "completed": true
+}
+
+###
+# Delete todo by id
+DELETE http://localhost:4000/api/todos/492763
