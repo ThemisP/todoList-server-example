@@ -1,4 +1,15 @@
-let todos = [];
+let todos = [
+  {
+    id: 1,
+    message: "Example todo",
+    completed: false,
+  },
+  {
+    id: 2,
+    message: "Example todo 2",
+    completed: false,
+  },
+];
 
 const todosService = {
   getAll: () => todos,
